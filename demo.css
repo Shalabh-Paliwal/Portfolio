@@ -1,0 +1,206 @@
+:root{
+    --bg: #fff;
+    --bg-alt: #f3f6fa;
+    --text:#1f2933;
+    --muted: #5b6770;
+    --accent: #1d4ed8;
+    --accent-dark: #1639a6;
+    --border: #dde3ea;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    color: var(--accent);
+}
+
+.site-header{
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    z-index: 10;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+.nav-list a{
+    color: var(--muted);
+    text-decoration: none;
+}
+
+/* ---------- Hero ----------- */
+.hero{
+    padding: 60px 0;
+    background: var(--bg-alt);
+}
+
+.hero-inner{
+    display:flex;
+    align-items: center;
+    gap: 40px
+}
+
+.profile-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--bg);
+}
+
+.hero-text h1{
+    font-size: 2.2rem;
+    margin-bottom: 4px;
+}
+
+.subtitle{
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* ----------- Section ----------------- */
+.section{
+    padding: 50px 0;
+}
+
+.section-alt{
+    background: var(--bg-alt);
+}
+
+.section h2{
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+/* ----------- Skills --------- */
+.skills-list{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.skills-list li{
+    padding: 6px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+}
+
+/* ------------ Projects ---------- */
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.project{
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    
+}
+
+.project h3{
+    margin-bottom: 8px;
+}
+
+
+.project p{
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+/* --------- education-item -------- */
+.education-item{
+    margin-bottom: 20px;
+}
+
+.education-item h3{
+    margin-bottom: 4px;
+}
+
+.education-item p{
+    color: var(--muted);
+}
+
+/* ------- Contact ---------*/
+address{
+    margin-top: 12px;
+    font-style: normal;
+}
+/* ----------- Footer -------- */
+.site-footer{
+    padding: 20px 0;
+    text-align: center;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 640px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
